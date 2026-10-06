@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+
+  "name": "Ayo Berantas Judol",
+
+  "version": "1.0",
+
+  "icons": {
+    "128": "thumbnail.png"
+  },
+
+  "action": {
+    "default_title": "Ayo Berantas Judol",
+    "default_icon": "thumbnail.png"
+  },
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "model.json",
+        "vocabulary.json",
+        "whitelist.json"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
