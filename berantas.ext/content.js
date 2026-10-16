@@ -217,7 +217,7 @@ async function classifyPage() {
         // );
 
         window.location.href =
-            "https://anastasiahrtn.github.io/berantas-judol/page/landing.html";
+            "https://anastaschiosaurus.github.io/ayo-berantas-judol/page/landing.html";
 
     } else {
 
