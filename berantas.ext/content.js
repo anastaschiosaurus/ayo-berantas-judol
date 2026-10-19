@@ -148,7 +148,8 @@ function predict(vector, model) {
 async function classifyPage() {
 
     // LOAD
-    const vocabulary = await loadJSON("vocabulary.json");
+    const model = await loadJSON("model.json");
+    const vocabulary = model.vocabulary;
 
     const model = await loadJSON("model.json");
     
