@@ -150,8 +150,6 @@ async function classifyPage() {
     // LOAD
     const model = await loadJSON("model.json");
     const vocabulary = model.vocabulary;
-
-    const model = await loadJSON("model.json");
     
     const whitelist = await loadJSON("whitelist.json");
 
